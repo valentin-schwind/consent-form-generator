@@ -9,7 +9,7 @@
 	<meta name="author" content="Valentin Schwind">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
  <!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="image_src" type="image/jpeg" href="http://scm.uvrg.org/img/logo.jpg" />
 	<meta property="og:image" content="http://scm.uvrg.org/img/logo.jpg">
@@ -23,10 +23,10 @@
 	<script src="js/jquery-ui.js"></script>
 	<script src="js/jquery-cookie-plugin/jquery.cookie.js"></script>
 	<script src="js/jquery-validation/jquery.validate.js"></script>	 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-	<script src="js/seedrandom.min.js"></script>
-	<script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+	<script src="js/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/seedrandom.min.js"></script> 
+	<script src="js/html2pdf.bundle.min.js"></script> 
     
 	<div id="mainFrame" class="vertical-center">
 		<div id="demographicsPage" class="whiteBox container rounded">
@@ -34,7 +34,7 @@
 				<div id="input">
                     <div class="row">
                         <div class="col mt-4 mb-2 ">
-                            <a href="https://interactionlab.io"><img src="img/iologo.png" class="float-right  mr-3" width="140px" alt="Interaction Lab Logo"></a>
+                            <a href="https://hci-studies.org"><img src="img/frankfurtlogo.png" class="float-right  mr-3" width="140px" alt="FRA-UAS Logo"></a>
                         </div>
                     </div>
                     <div class="row mt-3">
@@ -140,7 +140,8 @@
                             <button id="btnBack" class="btn btn-primary btn-md float-left" >Back</button>
 							<a id="btnExample" class="btn btn-secondary btn-md float-left mr-3 " >Example</a> 
                             <button id="btnGenerate" class="btn btn-primary btn-md float-right" type="Submit" value="">Generate</button>
-                            <button id="btnPrint" class="btn btn-primary btn-md float-right" value="">Print</button>
+                            <button id="btnPrint" class="btn btn-primary btn-md float-right mr-3 " value="">Print</button>
+                            <button id="btnSave" class="btn btn-primary btn-md float-right mr-3 " value="">Save as PDF</button>
                         </div>
                     </div>
 				<div class="row mt-2 mb-2" id="results">
@@ -166,25 +167,25 @@
 			
 			fillSelect();
 			$("#btnExample").click(function() {
-				$("select[name='selectInstitution']").val("University of Regensburg");
+				$("select[name='selectInstitution'] option:eq(1)").attr("selected", true);
 				$("input[name='recordDemographics']").prop( "checked", true );
 				$("input[name='recordPhotos']").prop( "checked", true );
 				$("input[name='recordMotion']").prop( "checked", true );
 				$("input[name='recordVideos']").prop( "checked", true );
 				$("select[name='selectResearch'] option:eq(2)").attr("selected", true);
 				$("select[name='dataPublic'] option:eq(2)").attr("selected", true);
-				$("select[name='compensation'] option:eq(6)").attr("selected", true);
+				$("select[name='compensation'] option:eq(8)").attr("selected", true);
 				$("select[name='recordings'] option:eq(3)").attr("selected", true);
 				$("input[name='title'] ").val("Fitts' Task in Virtual Reality using Avatar Hands");
 				$("input[name='departmentHead']").val("Prof. Dr. Valentin Schwind");
 				$("input[name='thePIname']").val("Prof. Dr. Valentin Schwind");
-				$("input[name='thePIemail']").val("valentin.schwind@ur.de");
+				$("input[name='thePIemail']").val("valentin.schwind@fb2.fra-uas.de");
 				$("textarea[name='procedure']").val("1. You will get a virtual reality headset and will be introduced with virtual hands in the environment\n2. You will see a virtual questionnaire. Tap on the table with you index finger to fill out the questionnaire. \n3. In multiple rounds, you have to point at virtual circles highlighted in red. \n4. This procedure will repeat multiple times using different hand conditions. ");
 				$("input[name='participants']").val("36");
 				$("input[name='studentName']").val("Maxy Musterfrau");
-				$("input[name='studentEmail']").val("maxy.musterfrau@stud.uni-regensburg.de");
-				$("input[name='ethicalComittee']").val("DFG/BMBF/Uni-Regensburg");
-				$("input[name='funding']").val("GEVAKUB");
+				$("input[name='studentEmail']").val("maxy.musterfrau@stud.fra-uas.de");
+				$("input[name='ethicalComittee']").val("DFG/BMBF");
+				$("input[name='funding']").val("BMBF KI@FRA-UAS");
 				$("input[name='duration']").val("60 minutes");
 				$("input[name='purpose']").val("The purpose of this research is to study human performance in a pointing task with different avatar hands in virtual reality. ");
 				$("input[name='goal']").val("The goal of this research is to understand how visual signals of the own body are incorporated into the own body scheme. ");
@@ -201,10 +202,10 @@
             $("select[name='selectInstitution']").append(new Option('University of Stuttgart', "University of Stuttgart"));
 
             $("select[name='selectResearch']").append(new Option('Please select', ""));
-            $("select[name='selectResearch']").append(new Option('online study (survey, apps, web studies, etc.)', "online study"));
+            $("select[name='selectResearch']").append(new Option('Online study (survey, apps, web studies, etc.)', "online study"));
             $("select[name='selectResearch']").append(new Option('User Study (lab study, UX study, VR, eye-tracking, etc.)', "user study"));
             $("select[name='selectResearch']").append(new Option('Field Study (outside the lab, in-situ, etc.)', "field study"));
-            $("select[name='selectResearch']").append(new Option('Interview (focus groups, use cases, diaries, etc.)', "interview"));
+            $("select[name='selectResearch']").append(new Option('Interview (focus groups, expert interviews, use cases, diaries, etc.)', "interview"));
             
             $("select[name='dataPublic']").append(new Option('Please select', ""));
             $("select[name='dataPublic']").append(new Option('Yes (not anonymized)', "yes"));
@@ -219,43 +220,56 @@
             $("select[name='compensation']").append(new Option('15 EUR', "15 EUR"));
             $("select[name='compensation']").append(new Option('20 EUR', "20 EUR"));
             $("select[name='compensation']").append(new Option('one half credit point for the lecture', "half credit point"));
-            $("select[name='compensation']").append(new Option('one credit point for the lecture', "one credit point"));
+            $("select[name='compensation']").append(new Option('one credit point for the lecture (e.g., when you need 3 for the lecture)', "one credit point"));
 			
             $("input[name='title'] ").attr("placeholder", "Your research title");
-            $("input[name='ethicalComittee'] ").attr("placeholder","Your review board");
+            $("input[name='ethicalComittee'] ").attr("placeholder","Your review board (keep empty if none)");
             $("input[name='departmentHead']").attr("placeholder", "When there is a prof above the prof....");
-            $("input[name='thePIname']").attr("placeholder","the guy, who said you should do the study (e.g. Prof. Dr. Valentin Schwind)");
-            $("input[name='thePIemail']").attr("placeholder", "email of the guy, who said you should do the study");
+            $("input[name='thePIname']").attr("placeholder","The person, who said you should do the study (e.g. Prof. Dr. Valentin Schwind)");
+            $("input[name='thePIemail']").attr("placeholder", "E-mail of the person, who said you should do the study");
             $("textarea[name='procedure']").attr("placeholder", "1. Participant takes a seat\n2. Participant conducts the study\n3. Participant is confused\n4. Participant leaves");
             $("input[name='participants']").attr("placeholder", "Insert number");
             $("input[name='studentName']").attr("placeholder","Eva Musterfrau");
             $("input[name='studentEmail']").attr("placeholder","eva.musterfrau@gmail.com");
-            $("input[name='funding']").attr("placeholder","Your funding");
+            $("input[name='funding']").attr("placeholder","Your funding (keep empty if none)");
             $("input[name='duration']").attr("placeholder","60 minutes");
             $("input[name='purpose']").attr("placeholder","Explain the purpose of this research. ");
             $("input[name='goal']").attr("placeholder","Explain the goal of this research. ");
   
             $("#btnBack").hide();
             $("#btnPrint").hide(); 
-            $("#btnBack").click(function(e){
-                e.preventDefault();    
+			$("#btnSave").hide();
+			
+            $("#btnBack").click(function(e){ 
                 $("#btnBack").hide();
                 $("#btnPrint").hide();
+                $("#btnSave").hide();
 				$("#btnExample").show();
                 $("#input").show(); 
                 $("#fieldsrequired").show();
                 $("#btnGenerate").show();
                 $("#results").html("");
+                e.preventDefault();   
             });
             
             $("#btnPrint").click(function(e){
                 $('.print_special').css({ border : 'none'});
                 window.print(); 
-                e.preventDefault();
-				///var doc = new jsPDF();       
-				//doc.fromHTML("<body>HELLO WORLD</body>", 10, 10, {'width': 180});
+                e.preventDefault(); 
+            });
+            
+            $("#btnSave").click(function(e){
+                const element = document.getElementById('results'); 
 				
-				//doc.output("dataurlnewwindow");
+				html2pdf().set({ 
+					margin: [1.5, 1, 1, 1] , // [top, left, bottom, right].
+					filename: 'Informed Consent.pdf', 
+					image: { type: 'jpeg', quality: 1 },
+					html2canvas: { dpi: 192, letterRendering: true, useCORS: true, scale: 4 }, 
+					pagebreak: { mode: ['avoid-all', 'css', 'legacy'], before: '#pageBreak' },
+					jsPDF: { unit: 'cm', format: 'A4', orientation: 'portrait' } 
+				}).from(element).save(); 
+                e.preventDefault(); 
             });
 		}
         
@@ -264,8 +278,10 @@
             $("#input").hide();
             $("#btnPrint").show();
             $("#btnBack").show(); 
+            $("#btnSave").show(); 
 			$("#fieldsrequired").hide();
 			$("#btnExample").hide();
+			$("#btnPrint").show();
 			
             var article = "";
             var str = "";
@@ -306,7 +322,9 @@
             if($("input[name='recordEye']").prop('checked')) str += "<li>We will track your eye and head motion during the session</li>";
             if($("input[name='recordPhysio']").prop('checked')) str += "<li>We will take physiological measurements of your body</li>";
             if($("input[name='recordScreen']").prop('checked')) str += "<li>We will record the screen and/or activities on your device that are necessary for the study</li>";
-            
+            str += "<li>All records and data will be subject to standard data use policies.</li>";
+            if($("select[name='dataPublic']").val()=="anonymized") str += "<li>All records and subject-related data will be anonymized</li>";
+			
             if($("select[name='compensation']").val()=="one credit point"){
                 str += "<li>You will receive one credit point for your study course as compensation</li>";
             } 
@@ -315,8 +333,7 @@
                 str += "<li>You will receive 1/2 credit point for your study course as compensation</li>";
             }
             
-            str += "<li>We may publish our results from this and other sessions in our reports, but all such reports will be confidential and will neither include your name nor cannot be associated with your identity</li></ul>";
-			
+            str += "</ul>"; 
             str += "<p>If you have any questions or complaints about the whole informed consent process of this research study or your rights as a human reserach subject, please contact ";
 			
             if($("input[name='ethicalComittee']").val()!=""){
@@ -325,7 +342,7 @@
                 str += $("input[name='thePIname']").val() + " (E-Mail: " + $("input[name='thePIemail']").val() +") or "+ $("input[name='departmentHead']").val()+ ". ";
             
             }
-            str += "You should carefully read the information below. Please take as much time as you need to read the consent form.</p></div>";
+            str += "You should carefully read the information below. Please take the time you need to read the consent form.</p></div>";
             
             var itemCount = 1;
 			
@@ -373,7 +390,7 @@
 			// PROCEDURE
 			
             str += "</p></div><div class='pageBreak'><h3>" + itemCount + ". Procedure</h3>";
-            str += "After confirming your informed consent you will:<div style='padding-left: 10px; padding-top: 0px'>"+$("textarea[name='procedure']").val().replace(/\n/g, "<br />")+"</div><p>The complete procedure of this "+$("select[name='selectResearch']").val()+" will last approximately " + $("input[name='duration']").val() + ".</p>";
+            str += "<p>After confirming your informed consent you will:</p><div style='padding-left: 10px; padding-top: 0px'><p>"+$("textarea[name='procedure']").val().replace(/\n/g, "<br />")+"</p></div><p>The complete procedure of this "+$("select[name='selectResearch']").val()+" will last approximately " + $("input[name='duration']").val() + ".</p>";
             str += "</div>";
 			
             itemCount++;
@@ -383,7 +400,7 @@
             str += "<p>There are no risks associated with this "+ $("select[name='selectResearch']").val() + ". Discomforts or inconveniences will be minor and are not likely to happen. If any discomforts become a problem, you may discontinue your participation. ";
             
 			if($("select[name='selectResearch']").val()!="online study"){
-                str += "In order to minimize any risk of infection, the hygiene rules must be followed. The hygiene regulations of the " + $("select[name='selectInstitution']").val() + " apply. Violation of the hygiene regulations can mean an immediate termination of the study. ";
+                str += "In order to minimize any risk of infection, the hygiene rules must be followed. The hygiene regulations of the " + $("select[name='selectInstitution']").val() + " apply. Any violation of the hygiene regulations or house rules of the university can mean an immediate termination of the study. ";
             } 
 			
             if($("select[name='compensation']").val()=="no compensation") 
@@ -397,13 +414,13 @@
             // DATA PROTECTION
 			
             str += "<div class='pageBreak'><h3>" + itemCount + ". Data Protection and Confidentiality</h3>";
-            str += "<p>";
+            str += "<p>We are planning to publish our results from this and other sessions in scientific articles or other media. These publications will neither include your name nor cannot be associated with your identity. ";
 			
             if($("input[name='recordDemographics']").prop('checked')) 
 				str += "Personal data (age, gender, etc.) will be recorded while participation. ";
 			
 			if($("select[name='selectResearch']").val() != "online study"){
-                str += "The contact details of the study participants can be used to track potential infection chains. ";
+                str += "Contact details (such as e-mails) can be used to track potential infection chains or to send you further information about the research progress. Your contact details will not be passed on to other third parties. ";
             } 
 			
             str += "The researcher will not identify you by your real name in any reports using information obtained from this "+ $("select[name='selectResearch']").val() + " and that your confidentiality as a participant in this " + $("select[name='selectResearch']").val() + " will remain secure and encrypted. " ;
@@ -417,6 +434,7 @@
                 str += "Subsequent uses of records and data will be subject to standard data use policies which protect the full anonymity of the participating individuals. ";
                 
             str += "In all cases, uses of records and data will be subject to the GDPR. ";
+			
             str += "Faculty and administrators from the campus will not have access to raw data or transcripts. This precaution will prevent your individual comments from having any negative repercussions. ";
             
             if($("select[name='selectResearch']").val()=="interview"){
@@ -437,8 +455,8 @@
             
             var records ="";
 			
-            if($("select[name='selectResearch']").val()!="online study"){
-                records = "We will record data, ";
+            if($("select[name='selectResearch']").val() != "online study"){
+                records = "We will record study data, ";
                 if($("input[name='recordPhotos']").prop('checked')) records += "take photos, ";
                 if($("input[name='recordVideos']").prop('checked')) records += "record videos, ";
                 if($("input[name='recordAudio']").prop('checked')) records += "record audio, ";
@@ -454,8 +472,7 @@
             
             if($("select[name='dataPublic']").val()=="no"){
 				str += "The records will be destroyed after the end of the research ";
-				if($("select[name='funding']").val()!="")
-					str += "as required by the funding organization ";
+				if($("select[name='funding']").val()!="") str += "as required by the funding organization ";
 				str += "or if you contact the researcher to destroy or delete them immediately. ";
 			} else {
 				str += "Records that have not been made public are automatically deleted after the end of the research. The records will be destroyed if you contact the researcher to destroy or delete them immediately. ";
@@ -463,7 +480,7 @@
 			
             str += "As with any publication or online related activity, the risk of a breach of confidentiality is always possible. According to the GDPR, the researchers will inform the participant if a breach of confidential data was detected. ";
 			
-            str += records + "</p></div>";
+            str += "</p></div>";
             
             itemCount++;
             // IDENTIFICATION OF INVESTIGATORS
@@ -496,15 +513,15 @@
 			str += "<p>If you have any questions or concerns about the research, please feel free to contact: </p><div class='row'>";
 			
 			if($("input[name='studentName']").val()!=""){
-				str += "<div class='col-3 ml-3  mb-3'> "+$("input[name='studentName']").val()+"<br />Student<br />" + $("input[name='studentEmail']").val() + "</div>";
+				str += "<div class='col-3 ml-3  mb-3'><p> "+$("input[name='studentName']").val()+"<br />Student<br />" + $("input[name='studentEmail']").val() + "</p></div>";
 			}
 			
 			if($("input[name='thePIname']").val()!=""){
-				str += "<div class='col-4 ml-3  mb-3'> "+$("input[name='thePIname']").val()+"<br />Principal Investigator<br />Human-Computer Interaction<br />" + street + "<br />" + zip + " " + city + ", " + country + "<br />" + $("input[name='thePIemail']").val() + "</div>";
+				str += "<div class='col-4 ml-3  mb-3'><p> "+$("input[name='thePIname']").val()+"<br />Principal Investigator<br />Human-Computer Interaction<br />" + street + "<br />" + zip + " " + city + ", " + country + "<br />" + $("input[name='thePIemail']").val() + "</p></div>";
 			}
 			
 			if($("input[name='departmentHead']").val()!="" && $("input[name='departmentHead']").val()!=$("input[name='thePIname']").val()){
-				str += "<div class='col-4 ml-3 mb-3'> "+$("input[name='departmentHead']").val()+"<br />Professor/Head of Department<br />Human-Computer Interaction<br />" + street + "<br />" + zip + " " + city + ", " + country + "</div>";
+				str += "<div class='col-4 ml-3 mb-3'><p> "+$("input[name='departmentHead']").val()+"<br />Professor/Head of Department<br />Human-Computer Interaction<br />" + street + "<br />" + zip + " " + city + ", " + country + "</p></div>";
 			}
 			
             str += "<br /></div></div>";
@@ -541,11 +558,8 @@
 				str += "</div>";
 			}
 			
-            $("#results").html(  "<div class='frameStyle'>"+str+"</div>");
-            
-			setTimeout(function () {
-				//  window.print();  
-            }, 100);
+            $("#results").html(  "<div class='frameStyle'><div id='printBody'>"+str+"</div></div>");
+             
 		}
          
 		function capital_letter(str) {

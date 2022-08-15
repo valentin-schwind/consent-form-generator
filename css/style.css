@@ -1,6 +1,12 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../_fonts/roboto-v29-latin-ext_latin-regular.woff);
+}
+
 html, body{
 	background: url(../img/bg.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
+	font-family: Roboto,"Helvetica Neue",Arial,sans-serif !important;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
@@ -12,122 +18,162 @@ html, body{
 
 .frameStyle {
     padding: 20px;
-    margin: 20px;
-    border: 1px solid black;
+    margin: 20px; 
 }
+
 @page {
     size: auto;   /* auto is the initial value */
     margin: 0;  /* this affects the margin in the printer settings */
 }
-@media print {
-    #pagy2 { border: none !important; } 
-    @page 
-{
-        border: none !important;
-    size: auto;   /* auto is the initial value */
-    margin-left: 12mm;  /* this affects the margin in the printer settings */
-    margin-right: 12mm;  /* this affects the margin in the printer settings */
-    margin-top: 15mm;  /* this affects the margin in the printer settings */
-    margin-bottom: 12mm;  /* this affects the margin in the printer settings */
-}
-#firstItem{
-     margin-top:-40mm;  /* this affects the margin in the printer settings */
-}
-.pageBreak{
-    page-break-inside:avoid;
-}
-  html, body{
-      font-size: 14pt;
-  }
-  table{
-      font-size: 14pt;
-  }
-  .itemRow {
-    visibility: hidden;
-    }
-  .frameStyle {
-    padding: 20px;
-    margin: 20px;
-    border: none;
-    }
-   h1 {
-    font-size: 26pt !important;
-    font-weight: bold;
-    padding-bottom: 8mm;
-    }
-     h2 {
-       font-size: 24pt !important;
-        font-weight: bold;
-        
-    }
-     h3 {
-        font-size: 20pt !important;
-        font-weight: bold;
-        padding-top: 3mm;
-    }
-}
 
+#results .pageBreak p, #results .pageBreak ul, #results table, #results .row{
+	font-size: 13px;
+} 
 #results h1 {
-    font-size: 24px;
-    font-weight: bold;
-    
+	font-size: 24px ;
+	font-weight: bold;
+	padding-bottom: 4mm;
 }
 #results h2 {
-   font-size: 20px;
-    font-weight: bold;
-    
+	font-size: 20px;
+	font-weight: bold;
+
 }
 #results h3 {
-    font-size: 15px;
-    font-weight: bold;
-    
-}
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 3mm;
+} 
+
 #results table, th{
     text-align: left;
     padding-left: 30px;
     font-weight: normal !important;
     vertical-align: top;
 }
-#results{
-    font-family: Arial !important;
+ 
+p {
+    margin-top: 0;
+    margin-bottom: 0.5em;
 }
 
 
-ul.checks     	     {
-list-style: none;
-  margin-left: 1em;
-  padding-left: 0;
- }
+@media print {
+	#pagy2 { border: none !important; } 
+	@page 
+	{
+		border: none !important;
+		size: auto;   /* auto is the initial value */
+		margin-left: 12mm;  /* this affects the margin in the printer settings */
+		margin-right: 12mm;  /* this affects the margin in the printer settings */
+		margin-top: 25mm;  /* this affects the margin in the printer settings */
+		margin-bottom: 22mm;  /* this affects the margin in the printer settings */
+	}
+	
+	html, body{ 
+		font-size: 13pt !important;
+	}
+	#results .pageBreak p, #results .pageBreak ul, #results table, #results .row{
+		font-size: 13pt !important;
+	} 
+	ul {
+		list-style-type: square !important;
+	}
+	#firstItem{
+		margin-top: -30mm;  /* this affects the margin in the printer settings */
+	}
+	.pageBreak{
+		age-break-inside: avoid;
+	}  
+	h1 {
+		font-size: 20pt !important;
+		font-weight: bold;
+		padding-bottom: 8mm;
+	}
+	h2 {
+		font-size: 18pt !important;
+		font-weight: bold;
+
+	}
+	h3 {
+		font-size: 16pt !important;
+		font-weight: bold;
+		padding-top: 3mm;
+	}
+	p {
+		font-size: 13pt !important;
+		margin-top: 0;
+		margin-bottom: 0.5em;
+	}
+	.frameStyle {
+		padding: 20px;
+		margin: 20px;
+		border: none;
+	}
+	table{
+		font-size: 16px;
+	}
+	.itemRow {
+		visibility: hidden;
+	}
+}
+
+#results{ 
+	
+}
+
+#printBody{
+    font-family: Roboto, "Helvetica Neue", rial,sans-serif !important;
+}
+
+
+ul.checks {
+	list-style: none;
+	margin-left: 1em;
+	padding-left: 0;
+}
+
 ul.checks  li {
-  padding-left: 1em;
-  text-indent: -1em;
-   padding-bottom: 9px;
+	padding-left: 1em;
+	text-indent: -1em;
+	padding-bottom: 9px;
 }
-ul.checks li:before {
-    content: "\25FB";
+
+ul.checks li:before { 
     padding-right: 5px;
- }
+}
+
+ul {
+	list-style: none !important;
+	padding: 0px;
+}
+
+ul li:before {
+    content: '\2022';
+    margin: 0 0.5em;    /* any design */
+}
+
 .transparent{
-  background: transparent; 
+	background: transparent; 
 }
 
 .vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one <img draggable="false" class="emoji" alt="🙂" src="https://s.w.org/images/core/emoji/72x72/1f642.png">       */
-  display: flex;
-  align-items: center;
+	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+	min-height: 100vh; /* These two lines are counted as one <img draggable="false" class="emoji" alt="🙂" src="https://s.w.org/images/core/emoji/72x72/1f642.png">       */
+	display: flex;
+	align-items: center;
 }
 
 hr {
-  -moz-border-bottom-colors: none;
-  -moz-border-image: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
-  border-color: #21addf -moz-use-text-color #21addf;
-  border-style: #21addf solid none;
-  border-width: 1px 0;
-  margin: 5px 0;
+	-moz-border-bottom-colors: none;
+	-moz-border-image: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: #21addf -moz-use-text-color #21addf;
+	border-style: #21addf solid none;
+	border-width: 1px 0;
+	margin: 5px 0;
 }
 
 div.stimuliContainer {
@@ -180,21 +226,7 @@ div.stimuliContainer {
 
 
 }
-
-img.stimuli {
-	width: 100%;
-	float: left;
-}
-
-.stimuliText {
-	padding: 0  5px 0 0;
-	margin: 0 5px 0 0;
-}
-.stimuliQuestion {
-	font-weight: bold;
-	font-size: 15px;
-	line-height: 99%;
-}
+ 
 
 .whiteBox{
 	max-width: 900px;
@@ -236,73 +268,10 @@ input[type=radio] {
 }
 
 #progressBarBG {
-  width: 100%;
-  background-color: #e5e5e5;
+	width: 100%;
+	background-color: #e5e5e5;
 }
-
-#progressBar {
-  width: 0%;
-  font-size: 9px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  height: 1px;
-  background-color: #4CAF50;
-  text-align: center;
-  line-height: 30px;
-  color: white;
-}
-/*
-input[type=radio] {
-	display: none;
-	z-index:-1000; 
-	top:-1000px; 
-	overflow: hidden;
-	clip: rect(0 0 0 0);
-	height:1px; 
-	width:1px;
-	margin:-1px;
-	padding:0;
-	border:0;
-}
-
-input[type=radio] + label.css-radiolabel {
-	margin-right: 0px;
-	padding-left: 16px;	
-	display:inline-block;
-	min-height: 24px;
-	line-height:16px;
-	background-repeat:no-repeat;
-	background-position: 0 0;
-	vertical-align:middle;
-	cursor:pointer;
-	border: 7px solid transparent;
-}
-
-input[type=radio] + label.css-correctDistance{
-	padding-left: -16px;
-}
-
-input[type=checkbox] + label.css-correctDistance{
-	padding-left: 16px;
-}
-
-input[type=checkbox] + label.css-correctDistance {
-	width: 0px;
-}
-
-input[type=radio]:checked + label.css-radiolabel {
-	background-image:url(../img/radiobutton_checked16.png);
-}
-
-label.css-radiolabel {
-	background-image:url(../img/radiobutton_unchecked16.png);
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-}*/
-
+ 
 
 label.error {
 	/* remove the next line when you have trouble in IE6 with labels in list */
