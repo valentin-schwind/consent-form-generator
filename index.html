@@ -43,6 +43,12 @@
                         </div>
                     </div>
                     <hr />
+                    <div class="row mt-3">
+                        <div class="col mb-1">
+                            To get an informed consent form for your participant use can use this generator. You can then print it according to the number of your participants. 
+                        </div>
+                    </div>
+                    <hr />
                     <div class="row mt-3 ">
                         <div class="col-4"><span id="institutionText">Your Institution</span><span class="text-danger">*</span><br /></div>
                         <div class="col-8"><select class="form-control" name="selectInstitution" required></select></div>
@@ -149,7 +155,7 @@
 				</div>
 				<div class="row mt-2 mb-2 itemRow" id="githublink">
 					<div class="col" > 
-						<a href="https://github.com/interactionlab/informed-consent-generator/">Source Code on github</a>
+						<a href="https://github.com/valentin-schwind/consent-form-generator">Source Code on github</a>
 					</div>
 				</div>
 			</form>
@@ -167,15 +173,15 @@
 			
 			fillSelect();
 			$("#btnExample").click(function() {
-				$("select[name='selectInstitution'] option:eq(1)").attr("selected", true);
+				$("select[name='selectInstitution']").val("University of Applied Sciences in Frankfurt");
 				$("input[name='recordDemographics']").prop( "checked", true );
 				$("input[name='recordPhotos']").prop( "checked", true );
 				$("input[name='recordMotion']").prop( "checked", true );
 				$("input[name='recordVideos']").prop( "checked", true );
-				$("select[name='selectResearch'] option:eq(2)").attr("selected", true);
-				$("select[name='dataPublic'] option:eq(2)").attr("selected", true);
-				$("select[name='compensation'] option:eq(8)").attr("selected", true);
-				$("select[name='recordings'] option:eq(3)").attr("selected", true);
+				$("select[name='selectResearch']").val("online study");
+				$("select[name='dataPublic']").val("anonymized");
+				$("select[name='compensation']").val("one credit point");
+				//$("select[name='recordings']").val("selected", true);
 				$("input[name='title'] ").val("Fitts' Task in Virtual Reality using Avatar Hands");
 				$("input[name='departmentHead']").val("Prof. Dr. Valentin Schwind");
 				$("input[name='thePIname']").val("Prof. Dr. Valentin Schwind");
@@ -332,7 +338,8 @@
             if($("select[name='compensation']").val()=="half credit point"){
                 str += "<li>You will receive 1/2 credit point for your study course as compensation</li>";
             }
-            
+            str += "<li>Repeated participation in the study is not permitted. </li>";
+			
             str += "</ul>"; 
             str += "<p>If you have any questions or complaints about the whole informed consent process of this research study or your rights as a human reserach subject, please contact ";
 			
