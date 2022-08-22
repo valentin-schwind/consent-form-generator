@@ -375,9 +375,9 @@
             
 			if($("select[name='compensation']").val()!="no compensation"){
 				if($("select[name='compensation']").val()=="one credit point"){
-					str += "You will receive one credit point required for your study course at the University of Regensburg. You may withdraw and discontinue participation at any time without justification for withdrawing. You will still receive your extra one credit point that your professor had offered in exchange for your participation. If you decline to participate or withdraw from the "+$("select[name='selectResearch']").val()+", no one on the campus will be told. ";
+					str += "You will receive one credit point required for your study course at the " + $("select[name='selectInstitution']").val() + ". You may withdraw and discontinue participation at any time without justification for withdrawing. You will still receive your extra one credit point that your professor had offered in exchange for your participation. If you decline to participate or withdraw from the "+$("select[name='selectResearch']").val()+", no one on the campus will be told. ";
 				} else if($("select[name='compensation']").val()=="half credit point"){
-					str += "You will receive 1/2 credit point required for your study course at the University of Regensburg. You may withdraw and discontinue participation at any time without justification for withdrawing. You will still receive your 1/2 credit point that your professor had offered in exchange for your participation. If you decline to participate or withdraw from the "+$("select[name='selectResearch']").val()+", no one on the campus will be told. ";
+					str += "You will receive 1/2 credit point required for your study course at the " + $("select[name='selectInstitution']").val() + ". You may withdraw and discontinue participation at any time without justification for withdrawing. You will still receive your 1/2 credit point that your professor had offered in exchange for your participation. If you decline to participate or withdraw from the "+$("select[name='selectResearch']").val()+", no one on the campus will be told. ";
 				} else {
 					str += "You will receive " + $("select[name='compensation']").val() + " as compensation for your participation. You may withdraw and discontinue participation at any time without penalty or losing the compensation. If you decline to participate or withdraw from the "+$("select[name='selectResearch']").val()+", no one on the campus will be told. ";
 				}
@@ -506,7 +506,7 @@
 					city = "Frankfurt a. M.";
 				break;
                 case "University of Regensburg": 
-					street = "Universit‰tsstraﬂe 31";
+					street = "Universit√§tsstra√üe 31";
 					zip = "93053";
 					city = "Regensburg";
 				break;
