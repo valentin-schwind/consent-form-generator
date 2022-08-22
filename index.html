@@ -178,7 +178,7 @@
 				$("input[name='recordPhotos']").prop( "checked", true );
 				$("input[name='recordMotion']").prop( "checked", true );
 				$("input[name='recordVideos']").prop( "checked", true );
-				$("select[name='selectResearch']").val("online study");
+				$("select[name='selectResearch']").val("user study");
 				$("select[name='dataPublic']").val("anonymized");
 				$("select[name='compensation']").val("one credit point");
 				//$("select[name='recordings']").val("selected", true);
@@ -268,7 +268,7 @@
                 const element = document.getElementById('results'); 
 				
 				html2pdf().set({ 
-					margin: [1.5, 1, 1, 1] , // [top, left, bottom, right].
+					margin: [1, 1, 1, 1] , // [top, left, bottom, right].
 					filename: 'Informed Consent.pdf', 
 					image: { type: 'jpeg', quality: 1 },
 					html2canvas: { dpi: 192, letterRendering: true, useCORS: true, scale: 4 }, 
@@ -506,7 +506,7 @@
 					city = "Frankfurt a. M.";
 				break;
                 case "University of Regensburg": 
-					street = "Universit√§tsstra√üe 31";
+					street = "Universit‰tsstraﬂe 31";
 					zip = "93053";
 					city = "Regensburg";
 				break;

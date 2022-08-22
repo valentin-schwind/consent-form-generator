@@ -1,6 +1,6 @@
 @font-face {
     font-family: Roboto;
-    src: url(../../_fonts/roboto-v29-latin-ext_latin-regular.woff);
+    src: url(../_fonts/roboto-v29-latin-ext_latin-regular.woff);
 }
 
 html, body{
@@ -17,8 +17,8 @@ html, body{
 }
 
 .frameStyle {
-    padding: 20px;
-    margin: 20px; 
+    padding: 20px 20px 0px 20px;
+    margin: 20px 20px 0px 20px;
 }
 
 @page {
@@ -31,17 +31,17 @@ html, body{
 } 
 #results h1 {
 	font-size: 24px ;
-	font-weight: bold;
+	font-weight: 500;
 	padding-bottom: 4mm;
 }
 #results h2 {
 	font-size: 20px;
-	font-weight: bold;
+	font-weight: 500;
 
 }
 #results h3 {
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: 500;
 	padding-top: 3mm;
 } 
 
@@ -57,6 +57,9 @@ p {
     margin-bottom: 0.5em;
 }
 
+a.btn {
+	color: white !important;
+}
 
 @media print {
 	#pagy2 { border: none !important; } 
@@ -66,8 +69,8 @@ p {
 		size: auto;   /* auto is the initial value */
 		margin-left: 12mm;  /* this affects the margin in the printer settings */
 		margin-right: 12mm;  /* this affects the margin in the printer settings */
-		margin-top: 25mm;  /* this affects the margin in the printer settings */
-		margin-bottom: 22mm;  /* this affects the margin in the printer settings */
+		margin-top: 15mm;  /* this affects the margin in the printer settings */
+		margin-bottom: 15mm;  /* this affects the margin in the printer settings */
 	}
 	
 	html, body{ 
@@ -83,21 +86,21 @@ p {
 		margin-top: -30mm;  /* this affects the margin in the printer settings */
 	}
 	.pageBreak{
-		age-break-inside: avoid;
+		page-break-inside: avoid; 
 	}  
 	h1 {
 		font-size: 20pt !important;
-		font-weight: bold;
+		font-weight: 500;
 		padding-bottom: 8mm;
 	}
 	h2 {
 		font-size: 18pt !important;
-		font-weight: bold;
+		font-weight: 500;
 
 	}
 	h3 {
 		font-size: 16pt !important;
-		font-weight: bold;
+		font-weight: 500;
 		padding-top: 3mm;
 	}
 	p {
