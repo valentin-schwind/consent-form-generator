@@ -1,3 +1,3 @@
-# Automated Consent Form Generator 
-Created for scientific experiments in the field of user and experimental studies. 
+# Automated Informed Consent Generator 
+Created for scientific experiments in the field of HCI-related user and experimental studies. Please note: There are three predefined institutions.
 - HTML, Javascript

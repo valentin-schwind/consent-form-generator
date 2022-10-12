@@ -17,22 +17,27 @@ html, body{
 }
 
 .frameStyle {
-    padding: 20px 20px 0px 20px;
-    margin: 20px 20px 0px 20px;
+    margin: 20px; 
+    padding: 20px; 
+	border: 1px solid black;
+	box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.3);
 }
 
 @page {
     size: auto;   /* auto is the initial value */
     margin: 0;  /* this affects the margin in the printer settings */
+	
+		border: 1px solid black !important;
 }
 
 #results .pageBreak p, #results .pageBreak ul, #results table, #results .row{
-	font-size: 13px;
+	font-size: 12.5px;
+	line-height: 130%;
 } 
 #results h1 {
 	font-size: 24px ;
 	font-weight: 500;
-	padding-bottom: 4mm;
+	padding-bottom: 2mm;
 }
 #results h2 {
 	font-size: 20px;
@@ -40,21 +45,29 @@ html, body{
 
 }
 #results h3 {
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 500;
 	padding-top: 3mm;
 } 
 
 #results table, th{
     text-align: left;
-    padding-left: 30px;
+    padding-left: 20px;
     font-weight: normal !important;
     vertical-align: top;
 }
- 
+
+ul, ol{
+	margin-bottom: 0.5em;  
+	margin-top: 0.5em;  
+    list-style: none;  
+    text-indent: -18px; 
+    margin-left: 18px; 
+    
+} 
 p {
     margin-top: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 0;
 }
 
 a.btn {
@@ -63,54 +76,54 @@ a.btn {
 
 @media print {
 	#pagy2 { border: none !important; } 
-	@page 
-	{
+	@page {
 		border: none !important;
 		size: auto;   /* auto is the initial value */
-		margin-left: 12mm;  /* this affects the margin in the printer settings */
-		margin-right: 12mm;  /* this affects the margin in the printer settings */
-		margin-top: 15mm;  /* this affects the margin in the printer settings */
-		margin-bottom: 15mm;  /* this affects the margin in the printer settings */
+		margin-left: 14mm;  /* this affects the margin in the printer settings */
+		margin-right: 14mm;  /* this affects the margin in the printer settings */
+		margin-top: 14mm;  /* this affects the margin in the printer settings */
+		margin-bottom: 14mm;  /* this affects the margin in the printer settings */
 	}
 	
 	html, body{ 
-		font-size: 13pt !important;
+		font-size: 14pt !important;
 	}
 	#results .pageBreak p, #results .pageBreak ul, #results table, #results .row{
-		font-size: 13pt !important;
+		font-size: 14pt !important;
 	} 
 	ul {
 		list-style-type: square !important;
 	}
 	#firstItem{
-		margin-top: -30mm;  /* this affects the margin in the printer settings */
+		margin-top: -20mm;  /* this affects the margin in the printer settings */
 	}
 	.pageBreak{
 		page-break-inside: avoid; 
 	}  
 	h1 {
-		font-size: 20pt !important;
+		font-size: 25pt !important;
 		font-weight: 500;
 		padding-bottom: 8mm;
 	}
 	h2 {
-		font-size: 18pt !important;
+		font-size: 22pt !important;
 		font-weight: 500;
 
 	}
 	h3 {
-		font-size: 16pt !important;
+		font-size: 17pt !important;
 		font-weight: 500;
 		padding-top: 3mm;
 	}
 	p {
 		font-size: 13pt !important;
 		margin-top: 0;
-		margin-bottom: 0.5em;
+		line-height: 130%;
+		margin-bottom: 0;
 	}
 	.frameStyle {
-		padding: 20px;
-		margin: 20px;
+		padding: 0px;
+		margin: 0px;
 		border: none;
 	}
 	table{
@@ -119,16 +132,33 @@ a.btn {
 	.itemRow {
 		visibility: hidden;
 	}
-}
-
-#results{ 
-	
+} 
+#printBody #firstItem{
+	height: 60px; 
 }
 
 #printBody{
-    font-family: Roboto, "Helvetica Neue", rial,sans-serif !important;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif !important;
+	margin: 5px;
+	/*border: 1px solid black;*/
+	font-size: 10pt;
+	line-height: 125%;
 }
+#printBody h1 {
+	font-size: 18pt;
+	font-weight: 500;
+	padding-bottom: 2mm;
+}
+#printBody h2 {
+	font-size: 14pt;
+	font-weight: 500;
 
+}
+#printBody h3 {
+	font-size: 12pt;
+	font-weight: 500;
+	padding-top: 3mm;
+} 
 
 ul.checks {
 	list-style: none;
