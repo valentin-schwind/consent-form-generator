@@ -1,0 +1,56 @@
+#previewHTML {
+    margin: 10px;
+    padding: 60px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 2px 2px rgb(0 0 0 / 10%);
+}
+ 
+#previewHTML p, #previewHTML ul, #previewHTML ol, #previewHTML li, #previewHTML table, #previewHTML .row{
+	font-size: 12.5px;
+	line-height: 120%;
+} 
+#previewHTML h1 {
+	font-size: 24px ;
+	font-weight: 600;
+	padding-bottom: 2mm;
+}
+#previewHTML h2 {
+	font-size: 17px;
+	font-weight: 600; 
+}
+#previewHTML h3 {
+	font-size: 15px;
+	font-weight: 500;
+	padding-top: 3mm;
+} 
+#previewHTML li { 
+	padding-bottom: 3px;
+} 
+#previewHTML p { 
+	margin-top: 0;
+    margin-bottom: 1rem;
+} 
+#previewHTML .small-padding {  
+    margin-bottom: 0.5rem;
+} 
+
+input.error, select.error { 
+	border: 2px solid red; 
+}
+
+button.custom-addStep {
+	border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+	width: 30px;
+}
+
+#previewHTML th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: normal;
+    text-align: -internal-center;
+	text-align: left;
+    padding-left: 10px;
+    font-weight: normal !important;
+    vertical-align: top;
+} 

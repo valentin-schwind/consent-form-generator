@@ -334,3 +334,9 @@ label.errorStar {
 input.error, select.error { 
 	border: 2px solid red; 
 }
+
+button.custom-addStep {
+	border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+	width: 30px;
+}
