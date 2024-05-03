@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<textsnippets>
+	<text id="title">
+		<content lang="de">Einverständniserklärung zur Studienteilnahme</content>
+		<content lang="en">Informed Consent of Study Participation</content>
+	</text> 	
+	<options id="durationunits">
+		<option lang="de" value="minutes">Minuten</option> 
+		<option lang="en" value="minutes">minutes</option>		
+		
+		<option lang="de" value="hours">Stunden</option> 
+		<option lang="en" value="hours">hours</option>
+		
+		<option lang="de" value="days">Tage</option> 
+		<option lang="en" value="days">days</option> 
+		
+		<option lang="de" value="weeks">Wochen</option> 
+		<option lang="en" value="weeks">weeks</option> 
+	</options> 	
+	<options id="institutions">
+		<option lang="de" value="frauas">Frankfurt University of Applied Sciences, Nibelungenplatz 1, 60318 Frankfurt am Main, Germany</option> 
+		<option lang="en" value="frauas">Frankfurt University of Applied Sciences, Nibelungenplatz 1, 60318 Frankfurt am Main, Germany</option>		
+		
+		<option lang="de" value="regensburg">Universität Regensburg, Universitätsstr. 31, 93053 Regensburg, Germany</option> 
+		<option lang="en" value="regensburg">University of Regensburg, Universitätsstr. 31, 93053 Regensburg, Germany</option>
+		
+		<option lang="de" value="stuttgart">Universität Stuttgart, Pfaffenwaldring 5a, 70569 Stuttgart, Germany</option> 
+		<option lang="en" value="stuttgart">University of Stuttgart, Pfaffenwaldring 5a, 70569 Stuttgart, Germany</option> 
+	</options> 
+	<options id="studytype">
+		<option lang="de" value="onlinestudy">Onlinestudie</option> 
+		<option lang="en" value="onlinestudy">online study</option>		
+		
+		<option lang="de" value="userstudy">Anwenderstudie</option> 
+		<option lang="en" value="userstudy">user study</option>
+		
+		<option lang="de" value="fieldstudy">Feldstudie</option> 
+		<option lang="en" value="fieldstudy">field study</option>
+		
+		<option lang="de" value="qualitativestudy">qualitativen Untersuchung</option> 
+		<option lang="en" value="qualitativestudy">qualitative Investigation</option> 
+	</options> 	
+	<text id="andListing">
+		<content lang="de">und</content> 
+		<content lang="en">and</content>	
+	</text> 		
+	<text id="orListing">
+		<content lang="de">oder</content> 
+		<content lang="en">or</content>	
+	</text> 		 
+	<text id="ethicalCommiteeOf">
+		<content lang="de">die Ethikkommission der</content> 
+		<content lang="en">the ethical committee of the</content>	
+	</text> 	
+	<text id="invitation">
+		<content lang="de">Sie sind eingeladen, an der STUDY_TYPE STUDY_TITLE teilzunehmen.</content>
+		<content lang="en">You are invited to participate in the STUDY_TYPE STUDY_TITLE.</content>
+	</text> 
+	<text id="experimenter">
+		<content lang="de">Die Studie wird von RESEARCHER_NAMES durchgeführt und von PRINCIPAL_INVESTIGATOR an der INSTITUTION_NAME geleitet.</content> 
+		<content lang="en">The study is conducted by RESEARCHER_NAMES and supervised by PRINCIPAL_INVESTIGATOR from the INSTITUTION_NAME.</content>
+	</text> 
+	<text id="funding">
+		<content lang="de">Die Forschung wird gefördert durch das Projekt FUNDING_ORGANIZATION.</content> 
+		<content lang="en">The research is funded by the project FUNDING_ORGANIZATION.</content>
+	</text> 
+	<text id="list_daterange">
+		<content lang="de">Die Studie mit voraussichtlich SAMPLE_SIZE Teilnehmenden findet im Zeitraum vom STUDY_DATE_BEGIN zum STUDY_DATE_END statt.</content> 
+		<content lang="en">The study with estimated SAMPLE_SIZE participants takes place in the period from STUDY_DATE_BEGIN to STUDY_DATE_END.</content>
+	</text>  
+	<text id="pleasenote">
+		<content lang="de">Bitte beachten Sie:</content> 
+		<content lang="en">Please note:</content>
+	</text> 
+	<text id="list_voluntary">
+		<content lang="de">Ihre Teilnahme ist vollkommen freiwillig und kann jederzeit abgebrochen oder widerrufen werden</content> 
+		<content lang="en">Your participation is entirely voluntary and can be discontinued or withdrawn at any time</content>
+	</text> 
+	<text id="list_demographics">
+		<content lang="de">Wir erfassen zur Analyse einige persönliche Daten (z.B. Alter, Gender, usw.)</content> 
+		<content lang="en">For the evaluation, we collect some of personal information (e.g., age, gender, etc.)</content>
+	</text> 
+	<text id="list_contact_data">
+		<content lang="de">wobei Kontaktdaten (z.B. E-Mail-Adressen) nur für Rückfragen oder zu weiteren Studieninformationen erhoben und nicht an Dritte weitergegeben werden</content> 
+		<content lang="en">whereas contact data (e.g. e-mails) will only be used for feedback or further information about the study and not be passed on to any third parties</content>
+	</text> 
+	<text id="study_duration">
+		<content lang="de">Eine Untersuchung der STUDY_TYPE dauert ca.</content> 
+		<content lang="en">One session of the STUDY_TYPE will last ca.</content>
+	</text> 
+	<text id="list_start_wewill">
+		<content lang="de">Während der Sitzung werden</content> 
+		<content lang="en">During the session, we will</content>
+	</text> 
+	<text id="list_recordInput">
+		<content lang="de">Ihre Eingaben registriert</content> 
+		<content lang="en">log your input</content>
+	</text> 
+	<text id="list_recordPhotos">
+		<content lang="de">Fotos aufgenommen</content> 
+		<content lang="en">take photos</content>
+	</text> 
+	<text id="list_recordVideos">
+		<content lang="de">Videos aufgezeichnet</content> 
+		<content lang="en">record videos</content>
+	</text> 
+	<text id="list_recordAudio">
+		<content lang="de">Tonaufzeichnungen gemacht</content> 
+		<content lang="en">record audio</content>
+	</text> 
+	<text id="list_recordMotion">
+		<content lang="de">Körperbewegungen erfasst</content> 
+		<content lang="en">track body movements</content>
+	</text> 
+	<text id="list_recordEye">
+		<content lang="de">Augenbewegungen erfasst</content> 
+		<content lang="en">track eye movements</content>
+	</text> 
+	<text id="list_recordPhysio">
+		<content lang="de">physiologische Körperdaten erfasst</content> 
+		<content lang="en">record physiological data of your body</content>
+	</text> 
+	<text id="list_recordScreen">
+		<content lang="de">die Bildschirminhalte aufgezeichnet</content> 
+		<content lang="en">do a screen recording</content>
+	</text> 
+	<text id="list_recordBodyMetrics">
+		<content lang="de">Körpermaße abgenommen</content> 
+		<content lang="en">record body metrics</content>
+	</text> 
+	<text id="list_recordNotes">
+		<content lang="de">Notizen angefertigt</content> 
+		<content lang="en">manually record notes</content>
+	</text> 
+	<text id="list_pseudo_anonymization">
+		<content lang="de">pseudoanonymisiert (über eine codierte Kennziffer)</content> 
+		<content lang="en">pseudoanonymized (with a coded number)</content>
+	</text> 
+	<text id="list_full_anonymization">
+		<content lang="de">vollständig anonymisiert</content> 
+		<content lang="en">fully anonymized</content>
+	</text> 
+	<text id="list_no_anonymization">
+		<content lang="de">nicht anonymisiert</content> 
+		<content lang="en">not anonymized</content>
+	</text> 
+	<text id="list_no_GDPR">
+		<content lang="de">werde vertraulich behandelt und</content> 
+		<content lang="en">are treated with confidentiality and</content>
+	</text> 
+	<text id="list_GDPR">
+		<content lang="de">unterliegen den Richtlinien der Datenschutzgrundverordnung (DSGVO)</content> 
+		<content lang="en">are subject to the guidelines of the General Data Protection Regulation (GDPR)</content>
+	</text>  
+	<text id="privacy_material">
+		<content lang="de">Sämtliche Aufzeichnungen, die Rückschlüsse auf Ihre Identität erlauben könnten, werden vor Veröffentlichung geprüft und anonymisiert (z. B. bei Fotos durch Unkenntlichmachung des Gesichts). Sofern keine Anonymisierung gewährleistet werden kann, werden die Aufzeichnungen nicht veröffentlicht.</content> 
+		<content lang="en">All recordings that could allow conclusions to be drawn about your identity are checked and made anonymous before publication (e.g. using photos by blurring or pixelating your face). If anonymity cannot be guaranteed, the recordings will not be published.</content>
+	</text> 
+	<text id="list_no_conclusions">
+		<content lang="de">Rückschlüsse auf einzelne Personen möglich sind</content> 
+		<content lang="en">conclusions about individual persons are possible</content>
+	</text> 
+	<text id="list_full_conclusions">
+		<content lang="de">keine Rückschlüsse mehr auf einzelne Personen mehr möglich sind</content> 
+		<content lang="en">no conclusions can be drawn about individual persons anymore</content>
+	</text> 
+	<text id="list_pseudo_conclusions">
+		<content lang="de">ohne die Informationen der Forschenden keine Rückschlüsse auf einzelne Personen möglich sind</content> 
+		<content lang="en">without information from the researchers no conclusions can be drawn about individual persons</content>
+	</text>  
+	<text id="list_full_publication">
+		<content lang="de">gespeichert, ausgewertet und möglicherweise als vollständige Datensätze öffentlich zur Verfügung gestellt</content> 
+		<content lang="en">stored, evaluated and possibly made publicly available as raw data sets</content>
+	</text> 
+	<text id="list_aggregated_publication">
+		<content lang="de">gespeichert, ausgewertet und möglicherweise veröffentlicht</content> 
+		<content lang="en">stored, evaluated, and potentially published</content>
+	</text> 
+	<text id="list_data_anonymization">
+		<content lang="de">Aufzeichnungen und personenbezogenen Daten DSGVO_RELATED und werden DATA_ANONYMIZED DATASET_PUBLISHED, wobei CONCLUSION_DRAWN</content> 
+		<content lang="en">Recordings and personal data DSGVO_RELATED and will DATA_ANONYMIZED DATASET_PUBLISHED so that CONCLUSION_DRAWN</content>
+	</text> 
+	<text id="alternative_and_informations">
+		<content lang="de">Die Alternative zur Studienteilnahme ist die Nichtteilnahme. Wenn Sie Fragen, Bedenken oder Beschwerden zur Einwilligungserklärung dieser Forschungsstudie oder zu Ihren Rechten als Versuchsperson haben, wenden Sie sich bitte an ETHICS_RESPONSIBILIES. Bitte lesen Sie die folgenden Informationen sorgfältig durch und nehmen Sie sich die Zeit, die Sie benötigen.</content> 
+		<content lang="en">The alternative to participation in this study is to choose not to participate. If you have any questions, concerns, or complaints about the informed consent process of this research study or your rights as a human research subject, please contact ETHICS_RESPONSIBILIES. Please read the following information carefully and take the time you need.</content>
+	</text> 
+	<text id="section_purpose_and_goal">
+		<content lang="de">Zweck und Ziel dieser Forschung</content> 
+		<content lang="en">Purpose and Goal of this Research</content>
+	</text>
+	<text id="achieving_the_goal">
+		<content lang="de">Ihre Teilnahme hilft uns, dieses Forschungsziel zu erreichen. Die Ergebnisse dieser Forschung können auf wissenschaftlichen oder Fachtagungen präsentiert oder in wissenschaftlichen Tagungsbänden und Zeitschriften veröffentlicht werden.</content> 
+		<content lang="en">Your participation will help us achieve this research goal. The results of this research may be presented at scientific or professional meetings or published in scientific proceedings and journals.</content>
+	</text>
+	<text id="section_participation_and_compensation">
+		<content lang="de">Studienteilnahme</content> 
+		<content lang="en">Study Participation</content>
+	</text> 
+	<text id="takenout">
+		<content lang="de">Ihre Teilnahme an dieser STUDY_TYPE ist vollkommen freiwillig und kann jederzeit abgebrochen oder widerrufen werden. Sie können die Beantwortung von Fragen oder die weitere Durchführung der Studie jederzeit verweigern, wenn Sie sich in irgendeiner Weise unwohl fühlen. Sie können die Teilnahme jederzeit ohne Angabe von Gründen widerrufen oder beenden. Wir behalten uns allerdings vor, Sie von der Studie auszuschließen (z.B. bei ungültigen Versuchen oder wenn eine Fortsetzung der Studie sich negativ auf Ihr Wohlbefinden oder die Ausstattung auswirken könnte).</content> 
+		<content lang="en">Your participation in this STUDY_TYPE is entirely voluntary and can be discontinued or withdrawn at any time. You can refuse to answer any questions or continue with the study at any time if you feel uncomfortable in any way. You can discontinue or withdraw your participation at any time without giving a reason. However, we reserve the right to exclude you from the study (e.g., with invalid trials or if continuing the study could have a negative impact on your well-being or the equipment).</content>
+	</text> 
+	<text id="repeated_participation">
+		<content lang="de">Eine wiederholte Teilnahme an der Studie ist nicht gestattet.</content> 
+		<content lang="en">Repeated participation in the study is not permitted.</content>
+	</text>
+	<text id="compensation_none">
+		<content lang="de">Sie haben aber keinen direkten Nutzen durch die Studienteilnahme, unterstützen aber unsere Arbeit und helfen die Forschung in diesem Bereich voranzubringen</content> 
+		<content lang="en">You have no direct benefit from participating in the study, but your support our work and help to advance research in this area</content>
+	</text> 
+	<text id="compensation_5EUR">
+		<content lang="de">Als Vergütung für Ihre Teilnahme erhalten Sie €5,00 vergütet</content> 
+		<content lang="en">You will receive €5.00 as compensation for your participation</content>
+	</text> 
+	<text id="compensation_10EUR">
+		<content lang="de">Als Vergütung für Ihre Teilnahme erhalten Sie €10,00 vergütet</content> 
+		<content lang="en">You will receive €10.00 as compensation for your participation</content>
+	</text> 
+	<text id="compensation_15EUR">
+		<content lang="de">Als Vergütung für Ihre Teilnahme erhalten Sie €15,00 vergütet</content> 
+		<content lang="en">You will receive €15.00 as compensation for your participation</content>
+	</text> 
+	<text id="compensation_20EUR">
+		<content lang="de">Als Vergütung für Ihre Teilnahme erhalten Sie €20,00 vergütet</content> 
+		<content lang="en">You will receive €20.00 as compensation for your participation</content>
+	</text> 
+	<text id="compensation_halfcreditpoint">
+		<content lang="de">Als Vergütung für Ihre Teilnahme erhalten Sie einen halben Creditpunkt für Ihre Vorlesung</content> 
+		<content lang="en">As compensation for your participation, you will receive half a credit point for your lecture</content>
+	</text> 
+	<text id="compensation_onecreditpoint">
+		<content lang="de">Als Vergütung für Ihre Teilnahme erhalten Sie einen Creditpunkt für die Vorlesung</content> 
+		<content lang="en">As compensation for your participation, you will receive one credit point for the lecture</content>
+	</text> 
+	<text id="compensation_stillreceive">
+		<content lang="de">Sie erhalten auch bei Abbruch der Studie die angebotene Vergütung.</content> 
+		<content lang="en">You will also receive the compensation offered if you discontinue study participation.</content>
+	</text> 
+	<text id="section_procedure">
+		<content lang="de">Studienablauf</content> 
+		<content lang="en">Study Procedure</content>
+	</text> 
+	<text id="begin_procedure">
+		<content lang="de">Nach Bestätigung dieser Einverständniserklärung ist folgender Studienablauf vorgesehen:</content> 
+		<content lang="en">After confirming this informed consent the procedure is as follows:</content>
+	</text> 
+	<text id="end_procedure">
+		<content lang="de">Der ganze Studienablauf dauert ca. STUDY_DURATION.</content> 
+		<content lang="en">The entire study procedure lasts about STUDY_DURATION.</content>
+	</text> 
+	<text id="risks_and_benefits">
+		<content lang="de">Risiken und Nutzen</content> 
+		<content lang="en">Risks and Benefits</content>
+	</text> 
+	<text id="study_benefits">
+		<content lang="de">Sie unterstützen mit Ihrer Teilnahme unsere Forschungsarbeit und tragen zu einem besseren Verständnis der Mensch-Computer-Interaktion bei.</content> 
+		<content lang="en">With your participation you support our research work and contribute to a better understanding of human-computer interaction.</content>
+	</text> 
+	<text id="study_risks">
+		<content lang="de">In der STUDY_TYPE werden Sie keinen unmittelbaren Risiken oder Gefahren ausgesetzt sein.</content> 
+		<content lang="en">In the STUDY_TYPE you will not be exposed to any immediate risk or danger.</content>
+	</text> 
+	<text id="unlikely_discomfort">
+		<content lang="de">Das Auftreten von Unannehmlichkeiten oder Unwohlsein sind unwahrscheinlich.</content> 
+		<content lang="en">Discomfort or inconvenience are not likely to happen.</content>
+	</text> 
+	<text id="questions_discomfort">
+		<content lang="de">Physische Unannehmlichkeiten werden geringfügig sein und mit hoher Wahrscheinlichkeit nicht auftreten, einige der Fragen können vielleicht aber schwierig zu beantworten sein oder dazu führen, dass Sie sich unwohl fühlen.</content> 
+		<content lang="en">Physical discomfort will be minor and is not likely to happen, but some of the questions may be difficult to answer or make you uncomfortable.</content>
+	</text> 
+	<text id="if_discomfort">
+		<content lang="de">Wenn irgendwelche Beschwerden zu einem Problem für Sie werden, sollten Sie Ihre Teilnahme sofort beenden.</content> 
+		<content lang="en">If any discomforts become a problem for you, you should discontinue your participation immediately.</content>
+	</text> 
+	<text id="house_and_hygenie">
+		<content lang="de">Während der Studienteilnahme gelten die Hausordnung und Hygienevorschriften der INSTITUTION_NAME. Verstöße können den Abbruch der Studienteilnahme bedeuten.</content> 
+		<content lang="en">During your participation the house rules and hygiene regulations apply at the INSTITUTION_NAME. Violations can mean the termination of the study.</content>
+	</text> 
+	<text id="injuries_and_insurances">
+		<content lang="de">Wenn Sie als Folge der Studienteilnahme verletzt werden sollten, suchen Sie nach Möglichkeit unmittelbar ärztliche Hilfe und kontaktieren den Versuchsleiter der Studie. Immatrikulierte Studierende sind durch die gesetzliche Unfallversicherung und im Schadensfall durch die private Haftpflichtversicherung automatisch gegen die Folgen von Unfällen an der INSTITUTION_NAME versichert.</content> 
+		<content lang="en">If you are getting injured as a result of participating in the study, seek medical help if possible immediately and contact the principal investigator. Enrolled students are automatically insured against the consequences of accidents through statutory accident insurance and with private liability insurance in case of any damages at the INSTITUTION_NAME.</content>
+	</text> 
+	<text id="risk_of_dataleaks">
+		<content lang="de">Wie bei allen Computersystemen, auf denen Daten verarbeitet werden, besteht trotz Sicherheitsmaßnahmen ein geringes Risiko eines Datenlecks und des Verlusts vertraulicher oder personenbezogenen Informationen.</content> 
+		<content lang="en">As with all computer systems on which data is processed, despite security measures, there is a small risk of data leakage and the loss of confidential or personal information.</content>
+	</text> 
+	<text id="study_confirmation">
+		<content lang="de">Die Bestätigung zur Teilnahme an dieser Studie kann direkt im Anschluss bei den Forschenden eingeholt werden.</content> 
+		<content lang="en">The confirmation of participation in this study can be obtained directly from the researchers.</content>
+	</text> 
+	<text id="dataprototection_and_confidentiality">
+		<content lang="de">Datenschutz und Vertraulichkeit</content> 
+		<content lang="en">Data Protection and Confidentiality</content>
+	</text> 
+	<text id="data_full_published">
+		<content lang="de">und möglicherweise veröffentlicht</content> 
+		<content lang="en">and possibly published</content>
+	</text> 
+	<text id="data_aggregated_published">
+		<content lang="de">und möglicherweise in aggregierter Form veröffentlicht</content> 
+		<content lang="en">and may be published in aggregate form</content>
+	</text> 
+	<text id="standard_use_full_anonymity">
+		<content lang="de">vollständig anonymisiert</content> 
+		<content lang="en">fully anonymized</content>
+	</text> 
+	<text id="standard_use_pseudo_anonymity">
+		<content lang="de">durch codierte Kennziffern anonymisiert</content> 
+		<content lang="en">anonymized using code numbers</content>
+	</text> 
+	<text id="standard_use_no_anonymity">
+		<content lang="de">nicht anonymisiert</content> 
+		<content lang="en">not anonymized</content>
+	</text>   
+	<text id="data_raw_data">
+		<content lang="de">Rohdaten</content> 
+		<content lang="en">raw data</content>
+	</text>  
+	<text id="data_media_data">
+		<content lang="de">Medienaufzeichnungen</content> 
+		<content lang="en">media recordings</content>
+	</text>  
+	<text id="data_interview_protocols">
+		<content lang="de">Interviewtranskripte</content> 
+		<content lang="en">transcribed interviews</content>
+	</text>
+	<text id="data_observation_protocols">
+		<content lang="de">Beobachtungsprotokolle</content> 
+		<content lang="en">observation protocols</content>
+	</text>  
+	<text id="data_publication">
+		<content lang="de">In dieser Studie werden für unsere Forschung persönliche und personenbezogene Daten erhoben.</content>
+		<content lang="en">In this study, personal and personal data are collected for our research.</content>
+	</text> 
+	<text id="legal_basis">
+		<content lang="de">Die Verwendung von persönlichen oder personenbezogenen Daten unterliegt der Datenschutz-Grundverordnung (DSGVO) der Europäischen Union (EU) und werden in Übereinstimmung mit der DSGVO behandelt. Das bedeutet, dass Sie die Daten, die in dieser Studie erhoben wurden, einsehen, berichtigen, in der Verarbeitung einschränken und löschen lassen können. Nur mit Ihrer Einwilligung werden in der Studie RECORDING_LIST. Wir planen die Ergebnisse dieser und anderer Forschungsstudien in wissenschaftlichen Artikeln oder anderen Medien zu veröffentlichen.</content> 
+		<content lang="en">The use of personal or subject-related information is governed by the European Union (EU) General Data Protection Regulation (GDPR) and will be treated in accordance with the GDPR. This means that you can view, correct, restrict processing, and delete the data collected in this study. Only with your agreement, we will RECORDING_LIST in the study. We plan to publish the results of this and other research studies in academic articles or other media.</content>
+	</text> 
+	<text id="data_aggregated_public_access">
+		<content lang="de">Der Zugriff auf die RAW_DATA der Studie erfolgt verschlüsselt, passwortgeschützt und nur für die Autoren, Kollegen und Forscher, die im Rahmen dieser Forschung zusammenarbeiten. Andere Mitglieder und Administratoren unserer Institution haben keinen Zugriff auf Ihre Daten. Die Daten werden DATA_ANONYMIZED und ausschließlich in aggregierter Form (zusammenfassend) veröffentlicht, sodass CONCLUSION_DRAWN.</content> 
+		<content lang="en">Access to the RAW_DATA of the study is encrypted, password-protected and only accessible to the authors, colleagues and researchers collaborating on this research. Other members and administrators of our institution do not have access to your data. When publishing, the data will be DATA_ANONYMIZED and published in aggregated form, so that CONCLUSION_DRAWN.</content>
+	</text>  
+	<text id="data_full_public_access">
+		<content lang="de">Der Zugriff auf die RAW_DATA der Studie erfolgt während der Auswertung verschlüsselt, passwortgeschützt und nur für die Autoren, Kollegen und Forscher, die im Rahmen dieser Forschung zusammenarbeiten. Als Teil der Forschungsarbeit werden die Daten DATA_ANONYMIZED und dann der Öffentlichkeit zur Verfügung gestellt, wobei CONCLUSION_DRAWN. Sobald das Material öffentlich verfügbar ist, kann die Verbreitung der Daten nicht mehr widerrufen werden.</content> 
+		<content lang="en">Access to the RAW_DATA of the study during the analysis is encrypted, password-protected and only accessible to the authors, colleagues, and researchers collaborating on this research. As part of the research, the data will be DATA_ANONYMIZED and then be made available to the general public, whereas CONCLUSION_DRAWN. Once the material has been made publicly available, the distribution of the data can no longer be revoked.</content>
+	</text> 
+	<text id="data_images_confidentiality">
+		<content lang="de">Vor der Veröffentlichung wird jedes Material, das auf Ihre Identität hinweist DATA_ANONYMIZED, z. B. durch Unkenntlichmachung des Gesichts.</content> 
+		<content lang="en">Before publication, any material indicating your identity will be DATA_ANONYMIZED e.g., by blurrin the face.</content>
+	</text> 
+	<text id="data_interviews_confidentiality">
+		<content lang="de">Jegliche Interviewinhalte oder direkte Zitate aus dem Interview, die über wissenschaftliche Veröffentlichungen oder andere wissenschaftliche Medien einsehbar sind, werden ebenfalls DATA_ANONYMIZED.</content> 
+		<content lang="en">Any interview content or direct quotations from the interview, that are made available through academic publications or other academic outlets will also be DATA_ANONYMIZED.</content>
+	</text> 
+	<text id="data_yes_contact">
+		<content lang="de">Kontaktdaten (z. B. E-Mails) werden nicht an Dritte weitergegeben, können aber von den Forschenden verwendet werden, um Teilnehmende zu kontaktieren, Infektionsketten nachzuvollziehen oder ihnen weitere Studieninformationen zuzusenden. Gemäß der DSGVO werden die Forscher die Teilnehmenden über ihre Kontaktdaten informieren, wenn eine Verletzung vertraulicher Daten festgestellt wurde.</content> 
+		<content lang="en">Contact details (e.g. e-mails) will not be passed on to third parties, but may be used by the researchers to contact participants, trace infection chains, or to send you further details of the study. According to the GDPR, the researchers will inform the participants using their contact details if a confidential data breach has been detected.</content>
+	</text> 
+	<text id="data_no_contact">
+		<content lang="de">Da keine Kontaktdaten (z.B. E-Mails) erhoben werden, können die Forschenden die Teilnehmenden nicht über weitere Details der Studie oder über eine mögliche Verletzung vertraulicher Daten informieren.</content> 
+		<content lang="en">Since no contact details (e.g. emails) are collected, the researchers cannot inform the participants about further details of the study or about a possible breach of confidential data.</content>
+	</text> 
+	<text id="data_no_time_limit">
+		<content lang="de">Ihre Daten werden nicht länger als nötig aufbewahrt oder bis Sie die Forscher kontaktieren, um Ihre Daten zu vernichten oder zu löschen lassen.</content> 
+		<content lang="en">Your data will not be retained for longer than necessary or until you contact researchers to have your data destroyed or deleted.</content>
+	</text> 
+	<text id="data_time_limit">
+		<content lang="de">Ihre Daten werden von den Forschern nicht länger als NUMBER_YEARS Jahre aufbewahrt oder bis Sie die Forscher kontaktieren, um Ihre Daten zu vernichten oder zu löschen lassen.</content> 
+		<content lang="en">Your data will not be retained for more than NUMBER_YEARS years by the researchers or until you contact the researchers to have your data destroyed or deleted.</content>
+	</text>
+	<!--<text id="data_publication">
+		<content lang="de">Wir planen, unsere Ergebnisse aus dieser und anderen Sitzungen in wissenschaftlichen Artikeln oder anderen Medien zu veröffentlichen. These publications will neither include your name nor cannot be associated with your identity.</content> 
+		<content lang="en">We are planning to publish our results from this and other sessions in scientific articles or other media. These publications will neither include your name nor cannot be associated with your identity.</content>
+	</text> -->
+	<!--<text id="data_publication_no_anonymity">
+		<content lang="de">Es können personenbezogene Daten oder Rohdaten veröffentlicht werden, die Rückschlüsse auf Ihre Identität zulassen. Bildmaterial, aus dem Ihre Identität hervorgeht, wird möglicherweise nicht anonymisiert. Interviewinhalte oder direkte Zitate aus dem Interview werden über wissenschaftliche Veröffentlichungen oder andere wissenschaftliche Medien öffentlich zugänglich gemacht. Sobald das Material zur Veröffentlichung bereitgegeben wurde, kann die Zustimmung zur Veröffentlichung nicht mehr widerrufen werden.</content> 
+		<content lang="en">Personal information or raw data allowing conclusions on your identity may be published. Image material indicating your identity will not be anonymized. Interview content or direct quotations from the interview, will be made publicly available through academic publications or other academic outlets. Once the material has been committed to publication it will not be possible to revoke the consent.</content>
+	</text> 
+	<text id="data_publication_anonymity">
+		<content lang="de">Alle personenbezogenen Daten werden anonymisiert und in aggregierter Form veröffentlicht. Das bedeutet, dass diese Veröffentlichungen weder Ihren Namen enthalten noch Ihre Daten mit Ihrer Identität in Verbindung gebracht werden können. Vor der Veröffentlichung wird auf Ihre Identität hinweisendes Bildmaterial anonymisiert, z. B. durch Unkenntlichmachung oder Verpixelung Ihres Gesichts. Jegliche Interviewinhalte oder direkte Zitate aus dem Interview, die über wissenschaftliche Veröffentlichungen oder andere wissenschaftliche Medien zur Verfügung gestellt werden, werden anonymisiert, sodass Sie nicht identifiziert werden können.</content> 
+		<content lang="en">Any personal information will be published anonymized and in aggregated form. This means that these publications will neither include your name nor that your data cannot be associated with your identity. Before publication, image material indicating your identity will be anonymized e.g., by blurring or pixelating your face. Any interview content or direct quotations from the interview, that are made available through academic publications or other academic outlets will be anonymized so that you cannot be identified.</content>
+	</text> -->
+	<text id="section_identification">
+		<content lang="de">Nennung der Untersuchenden</content> 
+		<content lang="en">Identification of Investigators</content>
+	</text> 
+	<text id="questions_to_researchers">
+		<content lang="de">Wenn Sie Fragen oder Bedenken bezüglich der Forschung haben, wenden Sie sich bitte an:</content> 
+		<content lang="en">If you have any questions or concerns about the research, please feel free to contact:</content>
+	</text> 
+	<text id="student_researcher">
+		<content lang="de">Versuchsdurchführung</content>> 
+		<content lang="en">Researchers</content>
+	</text> 
+	<text id="principal_investigator">
+		<content lang="de">Versuchsleitung</content>> 
+		<content lang="en">Principal investigator</content>
+	</text> 
+	<text id="section_agreement">
+		<content lang="de">Einverständniserklärung und Einwilligung</content> 
+		<content lang="en">Informed Consent and Agreement</content>
+	</text> 
+	<text id="retaining_consent">
+		<content lang="de">Diese Einverständniserklärung wird sicher und in Übereinstimmung mit der DSGVO nicht länger als nötig aufbewahrt.</content> 
+		<content lang="en">This consent form will be retained securely and in compliance with the GDPR for no longer than necessary.</content>
+	</text> 
+	<text id="understanding_consent">
+		<content lang="de">Ich verstehe die Erklärung, die mir über diese STUDY_TYPE gemacht wurde und erkläre mich freiwillig bereit, an dieser Benutzerstudie teilzunehmen. Ich habe alle meine Fragen zu meiner Zufriedenheit beantwortet bekommen und bin mir über Risiken und Nutzen bewusst. Mir ist bekannt, dass diese Einwilligungserklärung jederzeit widerrufen werden kann. Ich kann auf Anfrage eine Kopie dieser Einverständniserklärung erhalten.</content> 
+		<content lang="en">I understand the explanation of the STUDY_TYPE provided to me and I voluntarily agree to participate in this user study. I have had all my questions answered to my satisfaction and I am aware of risks and benefits. I understand that this declaration of consent is revocable at any time. I can obtain a copy of this consent form upon request.</content>
+	</text> 
+	<text id="agreeing_consent_pseudo_anonymous">
+		<content lang="de">Ich willige ein, dass von den Forschern während der STUDY_TYPE die oben genannten Daten erhoben werden. Ich verstehe, dass alle Daten vertraulich und in Übereinstimmung mit der DSGVO behandelt werden. Mir ist bekannt, dass das Material über Kennziffern pseudoanonymisiert wird und nicht direkt mit meiner Identität in Verbindung gebracht werden kann. Ich verstehe, dass vollständige Anonymität der Daten nicht garantiert werden kann und eine Verletzung der Vertraulichkeit immer möglich ist. Aus der Zustimmung zur Veröffentlichung kann ich keine Rechte (wie ausdrückliche Namensnennung, finanzielle Vorteile oder Mitautorenschaft) ableiten.</content> 
+		<content lang="en">I agree that the researchers will record the above mentioned data during the STUDY_TYPE. I understand that all data will be treated confidentially and in compliance with the GDPR. I understand that the material will be anonymized via codes and cannot be directly associated with my identity. I understand that full anonymity cannot be guaranteed and a breach of confidentiality is always possible. From the consent of publication, I cannot derive any rights (such as any explicit acknowledgment, financial benefit, or co-authorship).</content>
+	</text> 
+	<text id="agreeing_consent_full_anonymous">
+		<content lang="de">Ich willige ein, dass von den Forschern während der STUDY_TYPE die oben genannten Daten erhoben werden. Ich verstehe, dass alle Daten vertraulich und in Übereinstimmung mit der DSGVO behandelt werden. Mir ist bekannt, dass das Material anonymisiert wird und nicht mit meinem Namen in Verbindung gebracht werden kann. Ich verstehe, dass vollständige Anonymität der Daten nicht garantiert werden kann und eine Verletzung der Vertraulichkeit immer möglich ist. Aus der Zustimmung zur Veröffentlichung kann ich keine Rechte (wie ausdrückliche Namensnennung, finanzielle Vorteile oder Mitautorenschaft) ableiten.</content> 
+		<content lang="en">I agree that the researchers will RECORDING_LIST during the STUDY_TYPE. I understand that all data will be treated confidentially and in compliance with the GDPR. I understand that the material will be anonymized and cannot be directly associated with my name. I understand that full anonymity cannot be guaranteed and a breach of confidentiality is always possible. From the consent of publication, I cannot derive any rights (such as any explicit acknowledgment, financial benefit, or co-authorship).</content>
+	</text> 
+	<text id="agreeing_consent_no_anonymous">
+		<content lang="de">Ich willige ein, dass von den Forschern während der STUDY_TYPE die oben genannten Daten erhoben werden. Ich verstehe, dass alle Daten vertraulich und in Übereinstimmung mit der DSGVO behandelt werden. Mir ist bekannt, dass das Material nicht anonymisiert wird und mit meinem Namen in Verbindung gebracht werden kann. Ich verstehe, dass eine Verletzung von Vertraulichkeit der Daten immer möglich ist. Aus der Zustimmung zur Veröffentlichung kann ich keine Rechte (wie ausdrückliche Namensnennung, finanzielle Vorteile oder Mitautorenschaft) ableiten. Ich verstehe, dass das Material weltweit veröffentlicht und Gegenstand einer Pressemitteilung sein kann, die mit sozialen Medien oder anderen Werbeaktivitäten verknüpft ist. Vor der Veröffentlichung kann ich meine Einwilligung jederzeit widerrufen. Sobald das Material zur Veröffentlichung freigegeben wurde, kann die Zustimmung nicht mehr widerrufen werden.</content> 
+		<content lang="en">I agree that the researchers will RECORDING_LIST during the STUDY_TYPE. I understand that all data will be treated confidentially and in compliance with the GDPR. I understand that the material will be anonymized and cannot be associated with my name. I understand that full anonymity cannot be guaranteed and a breach of confidentiality is always possible. From the consent of publication, I cannot derive any rights (such as any explicit acknowledgment, financial benefit, or co-authorship). I understand that the material can be published worldwide and may be the subject of a press release linked to social media or other promotional activities. Before publication, I can revoke my consent at any time. Once the material has been committed to publication it will not be possible to revoke the consent.</content>
+	</text> 
+	<text id="location_date">
+		<content lang="de">Ort, Datum</content> 
+		<content lang="en">Location, Date</content>
+	</text> 
+	<text id="printed_name">
+		<content lang="de">Name des/der Teilnehmenden in Druckbuchstaben</content> 
+		<content lang="en">Printed Name of Subject</content>
+	</text> 
+	<text id="subject_signature">
+		<content lang="de">Unterschrift des/der Teilnehmenden</content> 
+		<content lang="en">Signature of Subject</content>
+	</text> 
+</textsnippets>					
+
+<!--
+$("select[name='compensation']").append(new Option('Please select', ""));
+$("select[name='compensation']").append(new Option('None', "compensation_none")); section_purpose_and_goal
+
+$("select[name='compensation']").append(new Option('5 EUR', "compensation_5EUR"));
+$("select[name='compensation']").append(new Option('10 EUR', "compensation_10EUR"));
+$("select[name='compensation']").append(new Option('15 EUR', "compensation_15EUR"));
+$("select[name='compensation']").append(new Option('20 EUR', "compensation_20EUR"));
+$("select[name='compensation']").append(new Option('one half credit point for the lecture', "compensation_halfcreditpoint"));
+$("select[name='compensation']").append(new Option('one credit point for the lecture (e.g., when you need 3 for the lecture)', "compensation_onecreditpoint"));
+-->

@@ -396,9 +396,14 @@
 						
 						$("select[name='selectDateOfDataEnd']").append(new Option('Please select', ""));
 						$("select[name='selectDateOfDataEnd']").append(new Option('Not specified (not longer than necessary)', 0));
+						$("select[name='selectDateOfDataEnd']").append(new Option('After 1 year', 2)); 
+						$("select[name='selectDateOfDataEnd']").append(new Option('After 2 years', 2)); 
 						$("select[name='selectDateOfDataEnd']").append(new Option('After 3 years', 3)); 
+						$("select[name='selectDateOfDataEnd']").append(new Option('After 4 years', 4)); 
+						$("select[name='selectDateOfDataEnd']").append(new Option('After 5 years', 5)); 
 						$("select[name='selectDateOfDataEnd']").append(new Option('After 6 years', 6)); 
 						$("select[name='selectDateOfDataEnd']").append(new Option('After 8 years', 8)); 
+						$("select[name='selectDateOfDataEnd']").append(new Option('After 9 years', 9)); 
 						$("select[name='selectDateOfDataEnd']").append(new Option('After 10 years (e.g., BMBF/DFG)', 10)); 
 						$("select[name='selectDateOfDataEnd']").append(new Option('After 15 years', 15)); 
 						$("select[name='selectDateOfDataEnd']").append(new Option('After 20 years', 20)); 
@@ -410,7 +415,7 @@
 						$("select[name='selectCompensation']").append(new Option('10 EUR', "compensation_10EUR"));
 						$("select[name='selectCompensation']").append(new Option('15 EUR', "compensation_15EUR"));
 						$("select[name='selectCompensation']").append(new Option('20 EUR', "compensation_20EUR"));
-						$("select[name='selectCompensation']").append(new Option('½ credit point for the lecture', "compensation_halfcreditpoint"));
+						$("select[name='selectCompensation']").append(new Option('ï¿½ credit point for the lecture', "compensation_halfcreditpoint"));
 						$("select[name='selectCompensation']").append(new Option('1 credit point for the lecture (e.g., when you need 3 for the lecture)', "compensation_onecreditpoint"));
 						
 						$("input[name='setTitle']").attr("placeholder", "Your research title");
@@ -460,10 +465,10 @@
 						$("input[name='setDuration']").val("45");
 						$("input[name='setParticipants']").val("32");
 						$("select[name='selectDurationUnit']").val("minutes");
-						$("input[name='setPurpose']").val("Der Zweck dieser Forschung ist es, die menschliche Leistung bei einer Zeigeaufgabe mit verschiedenen Avatar-Händen in der virtuellen Realität zu untersuchen.");
-						$("input[name='setGoal']").val("Das Ziel dieser Forschung ist es zu verstehen, wie visuelle Signale des eigenen Körpers in das eigene Körperschema integriert werden.");
+						$("input[name='setPurpose']").val("Der Zweck dieser Forschung ist es, die menschliche Leistung bei einer Zeigeaufgabe mit verschiedenen Avatar-Hï¿½nden in der virtuellen Realitï¿½t zu untersuchen.");
+						$("input[name='setGoal']").val("Das Ziel dieser Forschung ist es zu verstehen, wie visuelle Signale des eigenen Kï¿½rpers in das eigene Kï¿½rperschema integriert werden.");
 						
-						var procedureSteps = ["Sie bekommen ein Virtual-Reality-Headset und werden mit virtuellen Händen in die Umgebung eingeführt", "Sie werden mit dem Zeigefinger auf rot-markierte Ziele tippen", "Sie sehen einen virtuellen Fragebogen", "Diesen Vorgang wiederholen Sie mit allen Händen", "Am Ende gibt es ein zusammenfassendes Interview"];
+						var procedureSteps = ["Sie bekommen ein Virtual-Reality-Headset und werden mit virtuellen Hï¿½nden in die Umgebung eingefï¿½hrt", "Sie werden mit dem Zeigefinger auf rot-markierte Ziele tippen", "Sie sehen einen virtuellen Fragebogen", "Diesen Vorgang wiederholen Sie mit allen Hï¿½nden", "Am Ende gibt es ein zusammenfassendes Interview"];
 						$(".remove-textbox").click();
 						for(var i = 0; i < procedureSteps.length - 1; i++) {
 							$(".add-textbox").click(); 
