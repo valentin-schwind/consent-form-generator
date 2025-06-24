@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
 	<head> 
-		<meta charset="iso-8859-1">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+                <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="author" content="Valentin Schwind" /> 
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
@@ -48,7 +48,7 @@
 						<hr />
 						<div class="row mt-3">
 							<div class="col mb-1">
-								Obtaining informed consent ensures the users' autonomy and privacy, and that the users are aware of potential risks and benefits of your HCI study. To get an informed consent form for your participants use can use this generator. This informed consent is not suitable for vulnerable groups (children, disabled, prisoners) or when any harm can occur (medical studies). <a href="https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr/index_en.htm" target="_blank">When you collect any personal information in the EU, the GDPR applies</a> and set strict rules for processing the data and is based on consent. That consent should be freely given, specific, informed and unambiguous by way of a request presented in clear and plain language. <strong>Consent should be given by an affirmative act, such as checking a box online or signing the form.</strong> Please reach out to your superviser in case of any requests.
+                                                                Obtaining informed consent ensures the users' autonomy and privacy, and that the users are aware of potential risks and benefits of your HCI study. To get an informed consent form for your participants you can use this generator. This informed consent is not suitable for vulnerable groups (children, disabled, prisoners) or when any harm can occur (medical studies). <a href="https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr/index_en.htm" target="_blank">When you collect any personal information in the EU, the GDPR applies</a> and sets strict rules for processing the data and is based on consent. That consent should be freely given, specific, informed and unambiguous by way of a request presented in clear and plain language. <strong>Consent should be given by an affirmative act, such as checking a box online or signing the form.</strong> Please reach out to your supervisor in case of any requests.
 							</div>
 						</div>
 						<hr />
@@ -58,7 +58,7 @@
 						</div>
 						<div class="row" id="otherInstitutionRow">
 							<div class="col-4"><span id="otherInstitutionText"></span><br /></div>
-							<div class="col-8"><small>Enter the name, street + no., ZIP no. + city, and country of your institution</small><input class="form-control" name="setOtherInstitution" id="otherInstitution"></input></div>
+                                                        <div class="col-8"><small>Enter the name, street + no., ZIP no. + city, and country of your institution</small><input class="form-control" name="otherInstitution" id="otherInstitution"></input></div>
 						</div> 
 						<div class="row mt-3 ">
 							<div class="col-4"><span id="researchText">Kind of research</span><span class="text-danger">*</span><br /></div>
@@ -231,7 +231,7 @@
 							<div class="col-8"><input class="form-control" name="setPrincipleInvestigatorEmail" required></input></div>
 						</div> 
 						<div class="row mt-3 ">
-							<div class="col-4"><span id="studentName">Research student names(s)</span></div>
+                                                        <div class="col-4"><span id="studentName">Research student name(s)</span></div>
 							<div class="col-8"><input class="form-control" name="setResearcherNames"></input><small>Separate multiple names with comma (,)</small></div>
 							
 						</div>
@@ -244,7 +244,7 @@
 							<div class="col-8"><input class="form-control" name="setFunding"></input></div>
 						</div>
 						<div class="row mt-3 ">
-							<div class="col-4"><span id="ethicalComitteeText">Ethical comittee/IRB</span></div>
+                                                        <div class="col-4"><span id="ethicalComitteeText">Ethical committee/IRB</span></div>
 							<div class="col-8"><input class="form-control" name="setEthicalComittee"></input></div>
 						</div>
 						
@@ -320,7 +320,7 @@
 			var countProcedureSteps = 1;
 			
 			$(document).ready(function() { 
-				$.ajax({async: true, crossDomain: false, cache: false, type: "GET", url: "https://hci-studies.org/informed-consent-generator/textsnippets.xml", dataType: "xml",contentType:"application/x-javascript; charset:ISO-8859-1", success: function(xml) {
+				$.ajax({async: true, crossDomain: false, cache: false, type: "GET", url: "https://hci-studies.org/informed-consent-generator/textsnippets.xml", dataType: "xml",contentType:"application/x-javascript; charset:UTF-8", success: function(xml) {
 					
 					$('#btnBack').hide();
 					$('#results').hide(); 
@@ -415,15 +415,15 @@
 						$("select[name='selectCompensation']").append(new Option('10 EUR', "compensation_10EUR"));
 						$("select[name='selectCompensation']").append(new Option('15 EUR', "compensation_15EUR"));
 						$("select[name='selectCompensation']").append(new Option('20 EUR', "compensation_20EUR"));
-						$("select[name='selectCompensation']").append(new Option('� credit point for the lecture', "compensation_halfcreditpoint"));
+                                                $("select[name='selectCompensation']").append(new Option('½ credit point for the lecture', "compensation_halfcreditpoint"));
 						$("select[name='selectCompensation']").append(new Option('1 credit point for the lecture (e.g., when you need 3 for the lecture)', "compensation_onecreditpoint"));
 						
 						$("input[name='setTitle']").attr("placeholder", "Your research title");
-						$("input[name='setOtherInstitution']").attr("placeholder", "Your Institution, Streetname 123, ZIP City, Country");
+                                                $("input[name='otherInstitution']").attr("placeholder", "Your Institution, Streetname 123, ZIP Code City, Country");
 						$("input[name='setEthicalComittee'] ").attr("placeholder","Your review board (keep empty if none)"); 
-						$("input[name='setPrincipleInvestigator']").attr("placeholder","The person, who said you should do the study (e.g., Prof. Dr. Valentin Schwind)");
-						$("input[name='setPrincipleInvestigatorEmail']").attr("placeholder","firstname.lastname@institution.com");
-						$("input[name='setPrincipleInvestigatorEmail']").attr("placeholder", "The e-mail of the person, who said you should do the study"); 
+                                                $("input[name='setPrincipleInvestigator']").attr("placeholder","The person who asked you to conduct the study (e.g., Prof. Dr. Valentin Schwind)");
+                                                $("input[name='setPrincipleInvestigatorEmail']").attr("placeholder","firstname.lastname@institution.com");
+                                                $("input[name='setPrincipleInvestigatorEmail']").attr("placeholder", "The e-mail of the person who asked you to conduct the study");
 						$("input[name='setParticipants']").attr("placeholder", "Insert number");
 						$("input[name='setResearcherNames']").attr("placeholder","Eva Musterfrau, Max Mustermann, Erika Musterfrau");
 						$("input[name='setResearcherEmails']").attr("placeholder","eva.musterfrau@stud.fra-uas.de, max.mustermann@stud.fra-uas.de, erika.musterfrau@stud.fra-uas.de");
@@ -465,10 +465,10 @@
 						$("input[name='setDuration']").val("45");
 						$("input[name='setParticipants']").val("32");
 						$("select[name='selectDurationUnit']").val("minutes");
-						$("input[name='setPurpose']").val("Der Zweck dieser Forschung ist es, die menschliche Leistung bei einer Zeigeaufgabe mit verschiedenen Avatar-H�nden in der virtuellen Realit�t zu untersuchen.");
-						$("input[name='setGoal']").val("Das Ziel dieser Forschung ist es zu verstehen, wie visuelle Signale des eigenen K�rpers in das eigene K�rperschema integriert werden.");
+                                                $("input[name=setPurpose]").val("Der Zweck dieser Forschung ist es, die menschliche Leistung bei einer Zeigeaufgabe mit verschiedenen Avatar-Händen in der virtuellen Realität zu untersuchen.");
+                                                $("input[name=setGoal]").val("Das Ziel dieser Forschung ist es zu verstehen, wie visuelle Signale des eigenen Körpers in das eigene Körperschema integriert werden.");
 						
-						var procedureSteps = ["Sie bekommen ein Virtual-Reality-Headset und werden mit virtuellen H�nden in die Umgebung eingef�hrt", "Sie werden mit dem Zeigefinger auf rot-markierte Ziele tippen", "Sie sehen einen virtuellen Fragebogen", "Diesen Vorgang wiederholen Sie mit allen H�nden", "Am Ende gibt es ein zusammenfassendes Interview"];
+                                                var procedureSteps = ["Sie bekommen ein Virtual-Reality-Headset und werden mit virtuellen Händen in die Umgebung eingeführt", "Sie werden mit dem Zeigefinger auf rot-markierte Ziele tippen", "Sie sehen einen virtuellen Fragebogen", "Diesen Vorgang wiederholen Sie mit allen Händen", "Am Ende gibt es ein zusammenfassendes Interview"];
 						$(".remove-textbox").click();
 						for(var i = 0; i < procedureSteps.length - 1; i++) {
 							$(".add-textbox").click(); 
