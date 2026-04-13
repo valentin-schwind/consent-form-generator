@@ -71,7 +71,7 @@ h3 {
 }
 
 .page-card {
-    max-width: 1040px;
+    max-width: 960px;
     background: rgba(255, 255, 255, 0.96);
     padding: 36px 36px 28px;
     box-shadow: 0 10px 32px rgba(0, 0, 0, 0.18);
