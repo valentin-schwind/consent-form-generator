@@ -1,0 +1,10 @@
+﻿{
+  "name": "consent-form-generator",
+  "private": true,
+  "scripts": {
+    "test": "node scripts/test_runtime.js"
+  },
+  "dependencies": {
+    "jsdom": "^29.0.2"
+  }
+}
