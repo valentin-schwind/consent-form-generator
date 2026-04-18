@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="Valentin Schwind" />
+    <meta name="description" content="Browser-based informed consent generator for HCI user studies. Create, preview, save, and export informed consent forms in HTML and PDF without a server or backend." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="application-name" content="Informed Consent Generator" />
+    <meta name="apple-mobile-web-app-title" content="Consent Generator" />
+    <link rel="canonical" href="https://valentin-schwind.github.io/consent-form-generator/" />
 
     <link rel="stylesheet" href="_css/bootstrap.min.css" />
     <link rel="stylesheet" href="_css/daterangepicker.css" />
@@ -13,7 +19,86 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <meta property="og:site_name" content="Informed Consent Generator" />
-    <title>Informed Consent Generator</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Informed Consent Generator for HCI User Studies" />
+    <meta property="og:description" content="Generate informed consent forms for HCI studies directly in the browser, including HTML preview and local PDF export." />
+    <meta property="og:url" content="https://valentin-schwind.github.io/consent-form-generator/" />
+    <meta property="og:image" content="https://valentin-schwind.github.io/consent-form-generator/_img/hdmlogo.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Informed Consent Generator for HCI User Studies" />
+    <meta name="twitter:description" content="Create, preview, and export informed consent forms for HCI research without a backend service." />
+    <meta name="twitter:image" content="https://valentin-schwind.github.io/consent-form-generator/_img/hdmlogo.png" />
+    <title>Informed Consent Generator for HCI User Studies</title>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Informed Consent Generator",
+            "applicationCategory": "ResearchApplication",
+            "operatingSystem": "Web browser",
+            "url": "https://valentin-schwind.github.io/consent-form-generator/",
+            "image": "https://valentin-schwind.github.io/consent-form-generator/_img/hdmlogo.png",
+            "description": "Browser-based generator for informed consent forms in HCI user studies with HTML preview, local PDF export, and no backend requirement.",
+            "creator": {
+                "@type": "Person",
+                "name": "Valentin Schwind",
+                "url": "https://valentin-schwind.de"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "HCI User Studies Toolkit"
+            },
+            "keywords": [
+                "informed consent",
+                "HCI",
+                "user studies",
+                "research ethics",
+                "consent form generator",
+                "human-computer interaction",
+                "IRB",
+                "ethics review"
+            ],
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "EUR"
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is the Informed Consent Generator used for?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The tool helps researchers and students create study-specific informed consent forms for HCI and user research projects directly in the browser."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Does the generator require a server or backend?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. The generator runs locally in the browser, keeps settings client-side, and exports HTML and PDF without requiring a backend service."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Who is this consent form generator for?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "It is designed for HCI researchers, students, supervisors, and study teams who need a practical starting point for standard user-study consent forms."
+                    }
+                }
+            ]
+        }
+    </script>
 </head>
 <body>
     <script src="_js/jquery-3.3.1.min.js"></script>
@@ -267,6 +352,27 @@
                             </div>
                             <div class="resource-actions">
                                 <a href="https://github.com/valentin-schwind/consent-form-generator" target="_blank" rel="noopener noreferrer" class="btn btn-primary" role="button">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section resource-section">
+                    <div class="section-heading"><h2><i class="bi bi-search me-2"></i>About This Tool</h2></div>
+                    <div class="table-card resource-card">
+                        <div class="resource-item">
+                            <div>
+                                <h3>What the generator helps with</h3>
+                                <p>This informed consent generator is built for HCI user studies, usability tests, interviews, lab studies, online studies, and related student research projects. It helps research teams document study purpose, procedure, compensation, data collection, anonymization, retention, and publication decisions in a structured consent form.</p>
+                                <p>The app is especially useful for researchers, supervisors, and students who need a fast starting point for a consent form template for human-computer interaction research. It runs fully in the browser, supports HTML preview, local PDF export, and reusable saved settings without a server backend.</p>
+                            </div>
+                        </div>
+                        <div class="resource-item">
+                            <div>
+                                <h3>Frequently asked questions</h3>
+                                <p><strong>What is this app for?</strong><br />It helps create informed consent forms for HCI and user research studies.</p>
+                                <p><strong>Does it work offline?</strong><br />Yes. The generator is designed to run locally in the browser without requiring a backend service.</p>
+                                <p><strong>Can I export the result?</strong><br />Yes. The generated consent form can be reviewed as HTML and exported as PDF locally.</p>
                             </div>
                         </div>
                     </div>

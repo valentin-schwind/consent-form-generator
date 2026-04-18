@@ -1,0 +1,28 @@
+# Informed Consent Generator
+
+> Browser-based informed consent generator for HCI user studies and related user research workflows.
+
+- Live app: https://valentin-schwind.github.io/consent-form-generator/
+- Source code: https://github.com/valentin-schwind/consent-form-generator
+- Toolkit publication: https://doi.org/10.1145/3544549.3585890
+
+## Summary
+
+The Informed Consent Generator helps researchers and students create informed consent forms for HCI and user studies. It runs locally in the browser, generates HTML and PDF output, and does not require a backend service.
+
+## Intended use
+
+- HCI user studies
+- usability tests
+- interviews
+- lab studies
+- online studies
+- student research projects
+
+## Key features
+
+- structured informed consent form generation
+- HTML preview
+- local PDF export
+- reusable saved settings
+- no backend dependency
